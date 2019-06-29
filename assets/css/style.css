@@ -215,31 +215,38 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+/*
+  These rules take effect when the browser's width
+  is either 980px or less.
+*/
+@media screen and (max-width: 980px) {
+  /* The body's bg color will be whitesmoke */
+  body {
+    background-color: whitesmoke;
+  }
+
+  /* The wrapper's width will be 640px */
+  .wrapper {
+    width: 768px;
+  }
+}
 
 /*
   These rules take effect when the browser's width
   is either 768px or less.
 */
+
+
 @media screen and (max-width: 768px) {
   /* The body's bg color will be whitesmoke */
   body {
     background-color: whitesmoke;
   }
 
-  /* The wrapper's width will be 600px */
+  /* The wrapper's width will be 640px */
   .wrapper {
-    width: 600px;
+    width: 640px;
   }
 }
 
-@media only screen and (min-width: 600px) {
-  body {
-    background-color: whitesmoke;
-  }
-}
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: whitesmoke;
-  }
-}
