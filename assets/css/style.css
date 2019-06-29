@@ -215,38 +215,89 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
-/*
-  These rules take effect when the browser's width
-  is either 980px or less.
-*/
-@media screen and (max-width: 980px) {
-  /* The body's bg color will be whitesmoke */
-  body {
-    background-color: whitesmoke;
+/* Media queries */
+
+@media (max-width : 980px)  {
+  .masthead  {
+    position: static;
+    width: 100%;
   }
-
-  /* The wrapper's width will be 640px */
-  .wrapper {
-    width: 768px;
+  .nav1  {
+    position: relative;
+    left:-30%;
   }
-}
-
-/*
-  These rules take effect when the browser's width
-  is either 768px or less.
-*/
-
-
-@media screen and (max-width: 768px) {
-  /* The body's bg color will be whitesmoke */
-  body {
-    background-color: whitesmoke;
+ 
+  #main-container  {
+    width: 70%;
+    position: relative;
+    right: 10%;
   }
-
-  /* The wrapper's width will be 640px */
-  .wrapper {
-    width: 640px;
+ 
+  .main-section {
+    margin: 80px;
   }
-}
-
-
+ 
+  #logo  {
+    top: 0;
+    width: 100%;
+    height: 10%;
+  }
+ 
+ }
+ 
+ @media (max-width : 768px)  {
+  .masthead  {
+  position: static;
+  width: 100%;
+ }
+ .nav1  {
+  position: relative;
+  left:-30%;
+ }
+ 
+ #main-container  {
+  width: 70%;
+  position: relative;
+  right: 16%;
+ }
+ 
+ .main-section {
+  margin: 80px;
+ }
+ 
+ #logo  {
+  top: 0;
+  width: 100%;
+  height: 10%;
+ }
+ 
+ }
+ 
+ @media only screen and (max-width : 640px) {
+  .masthead  {
+    position: static;
+    width: 105%;
+  }
+  .nav1  {
+    position: relative;
+    left:-20%;
+  }
+ 
+  #main-container  {
+    width: 70%;
+    position: relative;
+    right: 16%;
+  }
+ 
+ 
+  .main-section {
+    margin: 80px;
+  }
+ 
+  #logo  {
+    top: 0;
+    width: 100%;
+    height: 10%;
+  }
+ 
+ }
